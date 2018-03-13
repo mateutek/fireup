@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: auto;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px; }
+
+mark {
+  background-color: #f5d33c; }
+
+.scroll {
+  background-color: #494f58;
+  height: 150px;
+  left: 5%;
+  position: fixed;
+  top: 185px;
+  width: 9px;
+  z-index: 5; }
+
+.main {
+  background: url("../img/main.png") no-repeat, center, center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0 auto;
+  width: 100%; }
+  .main .main__container {
+    display: inline-block;
+    height: 100vh;
+    margin: 5% 10%;
+    position: relative; }
+    .main .main__container .logo {
+      left: 0;
+      position: absolute;
+      top: 0; }
+    .main .main__container .password {
+      color: #fff;
+      font-family: "Lato";
+      font-size: 40px;
+      left: 80px;
+      position: absolute;
+      top: 170px;
+      width: 650px; }
+    .main .main__container .change-it {
+      border: 3px solid #f5d33c;
+      color: #fff;
+      cursor: pointer;
+      font-family: "Lato";
+      font-size: 23px;
+      left: 80px;
+      padding: 10px 85px;
+      position: absolute;
+      width: 324px;
+      top: 450px; }
+      .main .main__container .change-it:hover {
+        background-color: #f5d33c; }
+    .main .main__container .page-number {
+      bottom: 15%;
+      height: 10px;
+      left: 0;
+      position: absolute; }
+      .main .main__container .page-number .rec {
+        background-color: #f5d33c;
+        content: "";
+        height: 10px;
+        position: relative;
+        width: 40px; }
+        .main .main__container .page-number .rec:after {
+          bottom: 5px;
+          color: #fff;
+          content: '01';
+          font-family: "Lato";
+          font-size: 30px;
+          left: 40px;
+          line-height: 10px;
+          position: absolute; }
+  .main .header {
+    display: inline-block;
+    float: right;
+    height: 100vh;
+    margin-top: 6%;
+    position: relative;
+    width: 150px; }
+    .main .header .hamburger-icon {
+      display: none;
+      position: absolute;
+      top: -4.5%;
+      right: 1%;
+      font-size: 50px;
+      font-family: "Lato";
+      color: #fff;
+      cursor: pointer; }
+      .main .header .hamburger-icon--active {
+        color: #f5d33c; }
+    .main .header .language__container {
+      color: #fff;
+      font-family: "Lato";
+      font-size: 15px;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+      .main .header .language__container .language-item {
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Lato";
+        font-size: 15px; }
+        .main .header .language__container .language-item:hover {
+          color: #f5d33c; }
+    .main .header .menu--desktop {
+      left: 45px;
+      position: absolute;
+      top: 5px;
+      transform-origin: 0 100%;
+      transform: rotate(90deg);
+      width: 100vh; }
+      .main .header .menu--desktop .menu-link {
+        color: #fff;
+        display: inline-block;
+        font-family: "Lato";
+        font-size: 15px;
+        margin-left: 40px;
+        position: relative;
+        text-decoration: none; }
+        .main .header .menu--desktop .menu-link:hover::before {
+          background-color: #f5d33c;
+          content: '';
+          display: block;
+          height: 25px;
+          left: 0px;
+          position: absolute;
+          top: 40px;
+          width: 7px; }
+    .main .header .menu--mobile {
+      background-color: rgba(0, 0, 0, 0.4);
+      display: none;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 7.5%;
+      transform: rotate(0deg);
+      width: 100%; }
+      .main .header .menu--mobile .menu-link {
+        display: block;
+        font-size: 30px;
+        margin-left: 0;
+        margin: 0 auto;
+        padding: 20px 0;
+        position: relative;
+        text-align: center; }
+        .main .header .menu--mobile .menu-link--top {
+          padding-top: 70px; }
+        .main .header .menu--mobile .menu-link:hover::before {
+          height: 25px;
+          left: 50px;
+          top: 25px; }
+
+.main-about {
+  background: url("../img/main-about.png") no-repeat, center, center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 100%; }
+  .main-about .menu__container {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    font-size: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    .main-about .menu__container .menu__context {
+      display: inline-block;
+      font-size: 0;
+      padding-left: 10%;
+      padding-top: 15px;
+      width: calc(100% - 150px); }
+      .main-about .menu__container .menu__context .logo {
+        display: inline-block;
+        vertical-align: top; }
+      .main-about .menu__container .menu__context .menu-page {
+        display: inline-block;
+        position: relative;
+        width: calc(100% - 280px); }
+        .main-about .menu__container .menu__context .menu-page .menu-link {
+          color: #fff;
+          font-family: "Lato";
+          font-size: 15px;
+          line-height: 100px;
+          margin-left: 90px;
+          position: relative;
+          vertical-align: text-bottom;
+          text-align: right;
+          text-decoration: none; }
+          .main-about .menu__container .menu__context .menu-page .menu-link:hover::before {
+            background-color: #f5d33c;
+            content: '';
+            display: block;
+            height: 7px;
+            left: 0px;
+            position: absolute;
+            top: 30px;
+            width: 25px; }
+    .main-about .menu__container .menu__language {
+      color: #fff;
+      display: inline-block;
+      font-family: "Lato";
+      font-size: 15px;
+      position: absolute;
+      top: 55%; }
+      .main-about .menu__container .menu__language .language-item {
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Lato";
+        font-size: 15px; }
+        .main-about .menu__container .menu__language .language-item:hover {
+          color: #f5d33c; }
+  .main-about .about__context {
+    height: calc(100vh - 100px);
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 80%; }
+    .main-about .about__context .about-title {
+      display: inline-block;
+      font-family: "Lato";
+      font-size: 40px;
+      margin-left: 66%;
+      width: 33%;
+      padding: 50px 0 70px 20px; }
+    .main-about .about__context .about-text {
+      display: inline-block;
+      font-size: 0;
+      padding: 20px;
+      vertical-align: text-top;
+      width: 33%; }
+      .main-about .about__context .about-text .subtitle {
+        color: #f5d33c;
+        font-family: "Lato";
+        font-size: 24px;
+        margin: 0 0 20px 0; }
+      .main-about .about__context .about-text .subtitle-text {
+        font-family: "Lato";
+        font-size: 20px; }
+      .main-about .about__context .about-text--big {
+        margin-left: 33%;
+        width: 66%; }
+        .main-about .about__context .about-text--big .subtitle--big {
+          font-size: 60px; }
+  .main-about .number {
+    bottom: 5%;
+    height: 10px;
+    left: 0;
+    position: absolute; }
+    .main-about .number .rec {
+      background-color: #f5d33c;
+      content: "";
+      height: 10px;
+      position: relative;
+      width: 40px; }
+      .main-about .number .rec:after {
+        bottom: 5px;
+        content: '02';
+        font-family: "Lato";
+        font-size: 30px;
+        left: 40px;
+        line-height: 10px;
+        position: absolute; }
+
+@media screen and (max-width: 1441px) {
+  .main {
+    background-position: 50%, center; }
+  .main-about .menu__container .menu__context .menu-page .menu-link {
+    margin-left: 85px; } }
+
+@media screen and (max-width: 1025px) {
+  .main .main__container .password {
+    font-size: 35px;
+    left: 20px; }
+  .main .main__container .change-it {
+    left: 20px;
+    top: 380px; }
+  .main-about .menu__container .menu__context .menu-page .menu-link {
+    margin-left: 30px; }
+  .main-about .about__context .about-title {
+    font-size: 35px;
+    padding: 30px 0 20px 20px; }
+  .main-about .about__context .about-text {
+    padding: 20px; }
+    .main-about .about__context .about-text .subtitle {
+      font-size: 17px;
+      margin: 0 0 10px 0; }
+    .main-about .about__context .about-text .subtitle-text {
+      font-size: 18px; }
+    .main-about .about__context .about-text--big .subtitle--big {
+      font-size: 35px; } }
+
+@media screen and (max-width: 769px) {
+  .main {
+    background-position: 70%, center; }
+    .main .main__container .password {
+      font-size: 25px;
+      left: 0;
+      top: 50%;
+      width: 380px; }
+    .main .main__container .change-it {
+      left: 0;
+      top: 70%; }
+    .main .header {
+      display: inline-block;
+      width: 100px; }
+  .main-about .menu__container .menu__language {
+    display: none; }
+  .main-about .menu__container .menu__context {
+    width: 100%; }
+    .main-about .menu__container .menu__context .menu-page .menu-link {
+      margin-left: 18px; }
+  .main-about .about__context {
+    width: 90%; }
+    .main-about .about__context .about-title {
+      width: 90%;
+      padding: 10px 0 10px 20px;
+      margin-left: 0; }
+    .main-about .about__context .about-text {
+      width: 100%; }
+      .main-about .about__context .about-text--big {
+        width: 100%;
+        margin-left: 0; }
+        .main-about .about__context .about-text--big .subtitle--big {
+          font-size: 35px; } }
+
+@media screen and (max-width: 426px) {
+  .main .main__container .password {
+    left: 0;
+    font-size: 16px;
+    top: 70%;
+    width: 300px; }
+  .main .main__container .change-it {
+    left: 0;
+    top: 85%;
+    font-size: 20px;
+    width: 220px;
+    padding: 0 40px; }
+  .main .main__container .page-number {
+    display: none; }
+  .main-about .menu__container .menu__language {
+    display: none; }
+  .main-about .menu__container .menu__context {
+    display: block;
+    width: 100%; }
+    .main-about .menu__container .menu__context .menu-page {
+      display: none; }
+      .main-about .menu__container .menu__context .menu-page .menu-link {
+        margin-left: 18px; }
+  .main-about .number {
+    display: none; } }
+
+@media screen and (max-width: 376px) {
+  .scroll {
+    left: 2%; }
+  .main .main__container {
+    margin: 3% 6%; }
+    .main .main__container .logo {
+      left: 0; }
+    .main .main__container .password {
+      width: 280px; }
+  .main .header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .main .header .hamburger-icon {
+      display: block; }
+    .main .header .language__container {
+      display: none; }
+    .main .header .menu--desktop {
+      display: none; }
+    .main .header .menu--mobile {
+      display: block; }
+  .main-about .about__context .about-title {
+    width: 90%;
+    font-size: 20px; }
+  .main-about .about__context .about-text {
+    width: 100%;
+    padding: 5px 0 2px 20px; }
+    .main-about .about__context .about-text .subtitle {
+      font-size: 15px; }
+    .main-about .about__context .about-text .subtitle-text {
+      font-size: 14px; }
+    .main-about .about__context .about-text--big {
+      width: 100%;
+      margin-left: 0; }
+      .main-about .about__context .about-text--big .subtitle--big {
+        font-size: 20px; } }
